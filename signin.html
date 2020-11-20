@@ -17,10 +17,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <script src="./js/login.js"></script>
 </head>
 <body>
     <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-success">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
     <a class="navbar-brand"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a5/Kerala_God%27s_Own_Country_Logo.svg/1200px-Kerala_God%27s_Own_Country_Logo.svg.png" width="60px" height="40" alt=""></a>
       <a class="navbar-brand keral">Kerala Tourism</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,45 +31,11 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="home.html">Home  <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.keralatourism.org/newsletter">E Newsletter</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" type="button" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Districts
-            </a>
-            
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="district.html">Districts</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="alappuzha.html">Alappuzha</a>
-              <a class="dropdown-item" href="#">Ernakulam</a>
-              <a class="dropdown-item" href="#">Idukki</a>
-              <a class="dropdown-item" href="#">Kannur</a>
-              <a class="dropdown-item" href="#">Kasargod</a>
-              <a class="dropdown-item" href="#">Kollam</a>
-              <a class="dropdown-item" href="#">Kottayam</a>
-              <a class="dropdown-item" href="#">Kozhikode</a>
-              <a class="dropdown-item" href="#">Malappuram</a>
-              <a class="dropdown-item" href="#">Palakkad</a>
-              <a class="dropdown-item" href="#">Pathanamthitta</a>
-              <a class="dropdown-item" href="#">Thiruvananthapuram</a>
-              <a class="dropdown-item" href="#">Thrissur</a>
-              <a class="dropdown-item" href="#">Wayanad</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="https://www.google.com/maps/place/Kerala/@10.5327229,73.8836218,7z/data=!3m1!4b1!4m5!3m4!1s0x3b0812ffd49cf55b:0x64bd90fbed387c99!8m2!3d10.8505159!4d76.2710833">Go To Map</a>
-            </div>
-            
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.keralatourism.org/ebrochures">E Brochures</a>
+            <a class="nav-link" href="index.html">Home  <span class="sr-only">(current)</span></a>
           </li>
         </ul>
         
         <form class="form-inline my-2 my-lg-0">
-          <a class="nav-link active btn btn-primary mr-3" href="signin.html">Sign In</a>
           <a class="nav-link btn btn-danger mr-3" href="signup.html">Sign Up</a>
           <input class="form-control mr-sm-2" type="search" placeholder="Search Places" aria-label="Search">
           <a href="#"><i class="fa fa-search"></i></a>
@@ -78,17 +45,17 @@
   <!-- /Navigation Bar -->
 
   <!-- Form -->
-  <div class="container border border-white rounded p-4 shadow-lg p-3 mb-5 bg-white rounded my-5 mx-9">
-  <form>
-      <div class="form-group col-md-6">
+  <div class="container border border-white rounded p-4 shadow-lg p-3 mb-5 bg-dark rounded my-5 mx-9">
+  <form class="box" action="index.html" onsubmit="return valid()">
+      <div class="form-group col-md-6 signinup">
         <label for="inputEmail4">Email</label>
         <input type="email" class="form-control" id="inputEmail4" placeholder="xyz@gmail.com">
       </div>
-    <div class="form-group col-md-4">
+    <div class="form-group col-md-4 signinup">
       <label for="inputPassword4">Password</label>
       <input type="password" class="form-control" id="inputPassword4">
     </div>
-    <div class="form-group">
+    <div class="form-group signinup">
       <div class="form-check">
         <input class="form-check-input" type="checkbox" id="gridCheck">
         <label class="form-check-label" for="gridCheck">
@@ -97,7 +64,7 @@
       </div>
       <a href="signup.html">Dont have an account? Click here to Sign Up</a>
     </div>
-    <button type="submit" class="btn btn-danger">Sign In</button>
+    <button type="submit" class="btn btn-primary">Sign In</button>
   </form>
 </div>
   <!-- /Form -->
@@ -141,7 +108,7 @@
           <h6 class="text-uppercase font-weight-bold">Quick Links</h6>
           <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 110px; height: 2px;">
           <ul class="list-unstyled">
-            <li class="my-2"><a href="home.html"><i class="fas fa-home mr-2"></i>Home</a></li>
+            <li class="my-2"><a href="index.html"><i class="fas fa-home mr-2"></i>Home</a></li>
             <li class="my-2"><a href="signin.html"><i class="fas fa-sign-in-alt mr-2"></i>Login</a></li>
             <li class="my-2"><a href="signup.html"><i class="fas fa-user-plus mr-2"></i>SignUp</a></li>
             <li class="my-2"><a href="district.html"><i class="fas fa-city mr-2"></i>Districts</a></li>
